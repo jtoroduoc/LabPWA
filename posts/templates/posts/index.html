@@ -1,0 +1,12 @@
+{% extends 'posts/base.html' %}
+{% block content %}
+{% load static %}
+<div class="posts">
+    {% for r in resultados %}
+        <h3>{{r.titulo}}</h3><br>
+        Autor: {{r.autor}} <br>
+        <p id="{{r.id}}">{{r.contenido}}</p>
+        <hr>
+    {% endfor %}
+</div>
+{% endblock %}
