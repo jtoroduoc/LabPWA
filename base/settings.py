@@ -29,6 +29,19 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Configure manifiest
+PWA_APP_NAME = 'Posts'
+PWA_APP_DESCRIPTION = "App que muestra el listado de noticias (posts)"
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_START_URL = '/'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/posts_icon.png',
+        'sizes': '128x128'
+    }
+]
 
 # Application definition
 
